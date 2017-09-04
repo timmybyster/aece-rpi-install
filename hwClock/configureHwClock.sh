@@ -1,1 +1,1 @@
-sudo cp rc.local /etc/rc.local
+sudo cp /home/pi/aece-rpi-install/hwClock/rc.local /etc/rc.local

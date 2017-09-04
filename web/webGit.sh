@@ -5,12 +5,12 @@ if [ "$node" = "aece-rpi-web" ]; then
 	cd /var/www/aece-rpi-web
 	git stash
 	git pull origin master
-	sh /home/pi/Install/web/webUpdate.sh
+	sh /home/pi/aece-rpi-install/web/webUpdate.sh
 else
 	echo "Cloning Repository"
 	git clone https://github.com/timmybyster/aece-rpi-web
 	cd /var/www/aece-rpi-web
 	git pull origin master
-	sh /home/pi/Install/web/webInstall.sh
+	sh /home/pi/aece-rpi-install/web/webInstall.sh
 fi
 cd /var/www/aece-rpi-web

@@ -1,8 +1,8 @@
 echo "Configuring wifi SSID"  
-sh wifi/ap-config.sh
+sh /home/pi/aece-rpi-install/wifi/ap-config.sh
 echo "Preparing mysql DB"
-sh mysql/mysqlPrepare.sh
+sh /home/pi/aece-rpi-install/mysql/mysqlPrepare.sh
 echo "Getting latest version of aece-rpi-router"
-sh node/node.sh
+sh /home/pi/aece-rpi-install/node/node.sh
 echo "Getting latest version of aece-rpi-web"
-sh web/web.sh
+sudo sh /home/pi/aece-rpi-install/web/web.sh

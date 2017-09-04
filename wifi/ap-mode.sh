@@ -4,8 +4,8 @@ sudo /etc/init.d/hostapd stop
 sudo /etc/init.d/dnsmasq stop
 sleep 5
 
-sudo cp /home/pi/Installs/wifi/interfaces-ap /etc/network/interfaces
-sudo cp /home/pi/Installs/wifi/dhcpcd-ap.conf /etc/dhcpcd.conf
+sudo cp /home/pi/aece-rpi-install/wifi/interfaces-ap /etc/network/interfaces
+sudo cp /home/pi/aece-rpi-install/wifi/dhcpcd-ap.conf /etc/dhcpcd.conf
 sudo ifup wlan0
 sleep 5
 

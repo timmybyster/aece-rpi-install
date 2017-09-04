@@ -1,7 +1,7 @@
 #!/bin/bash
 old="AEC IBS"
-serial=$(sed -n '1 p' Install/install)
-system=$(sed -n '2 p' Install/install)
+serial=$(sed -n '1 p' /home/pi/aece-rpi-install/install)
+system=$(sed -n '2 p' /home/pi/aece-rpi-install/install)
 if [ "$system" = "CBS" ]; then
 	new="AXXIS CBS "
 	sudo sed -i '41s/.*/wpa_passphrase=axxisdemo/' /etc/hostapd/hostapd.conf
